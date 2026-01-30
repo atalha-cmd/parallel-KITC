@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "Makefile": "FortranFreeForm",
+        "vector": "cpp"
+    }
+}
