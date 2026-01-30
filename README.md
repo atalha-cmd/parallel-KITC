@@ -5,21 +5,9 @@
 ---
 
 ## Overview
-This repository implements a **parallel kernel-independent treecode (KITC)** that accelerates
-pairwise interaction computations by replacing the direct \(\mathcal{O}(N^2)\) summation with a hierarchical tree-based approximation of \(\mathcal{O}(N \log N)\) complexity.
+This repository implements a **Parallel version of a Kernel-Independent Barycentric Lagrange Treecode Algorithm** that accelerates pairwise interaction computations by replacing the direct O(N^2) summation with a hierarchical tree-based approximation of O(N log N) complexity.
 
 Unlike classical multipole methods, KITC is **kernel-independent** and relies on interpolation-based approximations, making it flexible and applicable to a wide range of interaction kernels.
-
----
-
-## Key Features
-- Hierarchical spatial tree construction
-- Kernel-independent interpolation-based approximation
-- Near-field direct interactions and far-field tree approximation
-- Accuracy validation against direct summation
-- Designed for large-scale particle systems
-
----
 
 ## Parallelization
 The code supports scalable parallel execution using:
@@ -28,4 +16,5 @@ The code supports scalable parallel execution using:
 - **GPU acceleration via Kokkos** (in progress)
 
 ---
-
+## Reference
+Wang, Lei. (2020). ”A Kernel-Independent Treecode Based on Barycentric Lagrange Interpolation.” Communications in Comp.Physics. 28. 1415-1436.
