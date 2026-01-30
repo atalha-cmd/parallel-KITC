@@ -20,6 +20,4 @@ The implementation supports scalable parallel execution through:
 ---
 
 ## Reference
-Wang, L. (2020).  
-*“A Kernel-Independent Treecode Based on Barycentric Lagrange Interpolation.”*  
-Communications in Computational Physics, **28**, 1415–1436.
+Wang, L. (2020). *“A Kernel-Independent Treecode Based on Barycentric Lagrange Interpolation.”*  Communications in Computational Physics, **28**, 1415–1436.
