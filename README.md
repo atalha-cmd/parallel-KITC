@@ -1,20 +1,25 @@
 # parallel-KITC
 
-**Parallel Implementation of Kernel-Independent Treecode (KITC)** for fast and scalable evaluation of long-range particle interactions.
+**Parallel Kernel-Independent Treecode (KITC)** for fast and scalable evaluation of long-range particle interactions.
 
 ---
 
 ## Overview
-This repository implements a **Parallel version of a Kernel-Independent Barycentric Lagrange Treecode Algorithm** that accelerates pairwise interaction computations by replacing the direct O(N^2) summation with a hierarchical tree-based approximation of O(N log N) complexity.
+This repository presents a **parallel implementation of a kernel-independent barycentric Lagrange treecode (KITC)** designed to efficiently accelerate pairwise interaction computations. The method replaces the direct **O(N²)** summation with a hierarchical, tree-based approximation of **O(N log N)** complexity, enabling scalable simulations for large particle systems.
 
-Unlike classical multipole methods, KITC is **kernel-independent** and relies on interpolation-based approximations, making it flexible and applicable to a wide range of interaction kernels.
-
-## Parallelization
-The code supports scalable parallel execution using:
-- **OpenMP** for shared-memory parallelism
-- **MPI** for distributed-memory parallelism
-- **GPU acceleration via Kokkos** (in progress)
+Unlike classical multipole-based methods, KITC is **kernel-independent** and employs interpolation-based approximations, making it broadly applicable to a wide class of interaction kernels without requiring analytic expansions.
 
 ---
+
+## Parallelization
+The implementation supports scalable parallel execution through:
+- **OpenMP** for shared-memory parallelism  
+- **MPI** for distributed-memory parallelism  
+- **GPU acceleration via Kokkos** *(in progress)*  
+
+---
+
 ## Reference
-Wang, Lei. (2020). ”A Kernel-Independent Treecode Based on Barycentric Lagrange Interpolation.” Communications in Comp.Physics. 28. 1415-1436.
+Wang, L. (2020).  
+*“A Kernel-Independent Treecode Based on Barycentric Lagrange Interpolation.”*  
+Communications in Computational Physics, **28**, 1415–1436.
